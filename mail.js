@@ -7,15 +7,15 @@ class Mailer{
   this.transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-          user: 'jesusmiguelcoronalopez@gmail.com',
-          pass: 'rujvyecsnqioxqvn'
-      },
+      user: 'defrancodental@gmail.com',
+      pass: 'qwokfyxtipzqrval'
+    },
   });
 
   
   //step number 2
   this.mailOptions = {
-    from: 'mcorl95@gmail.com'
+    from: 'defrancodental@gmail.com'
   }
 }
 
@@ -29,7 +29,7 @@ class Mailer{
       if (error) {
         return console.log(error)
       }
-      //console.log('Mensaje enviado: %s', info.messageId);
+      console.log('Mensaje enviado: %s', info.messageId);
     });
   }
 }

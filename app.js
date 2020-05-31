@@ -1,7 +1,7 @@
 const express = require ('express');
 const morgan = require ('morgan');
-const cors   = require ('cors');
 const path   = require ('path');
+const cors   = require ('cors');
 const {format} = require('timeago.js')
 
 

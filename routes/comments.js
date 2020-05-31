@@ -18,16 +18,11 @@ router.post('/api/comment/:id', async(req,res) =>{
       res.send(200,'item saved to database')
     })
       .catch(err => {
-       // res.status(400).send("unable to save to database", err)
        res.send(400,'unable to save to database',err)
-
       })
   } catch (error) {
-    //res.status(400).send('unable2 to save to database',error);
     res.send(400,'unable to save to database')
-
   }
-
 });
 
 //Obtenet un comentario
