@@ -34,7 +34,7 @@ router.post('/api/email', (req,res) => {
   
     const mailOptions = {
       from: email, // sender address
-      to: 'defrancodental@gmail.com',// list of receivers
+      to: 'mcorl95@gmail.com',// list of receivers
       subject: 'Solicitud de Cita', // Subject line
       text: text,
       html: '<h2>NOMBRE: '+name+' '+ln+' </h2> <br> <h2>EMAIL: '+email+' </h2><br><h2>TELÉFONO: '+phone+'</h2><br> <h2>SERVICIO: '+service+' <h2><br>DESCRIPCIÓN:'+text+'</h2></br>' ,//{path:'routes/email.html'}// plain text body
